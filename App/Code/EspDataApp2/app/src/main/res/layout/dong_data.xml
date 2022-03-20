@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textSize="24sp"
+        android:text="Ho ten sinh vien"
+        android:id="@+id/textViewStudentName"
+        android:fontFamily="serif"
+        android:textColor="@color/cardview_dark_background"
+        />
+
+    <TextView
+        android:id="@+id/textViewStudentCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/textViewStudentName"
+        android:layout_marginTop="10dp"
+        android:fontFamily="serif"
+        android:text="Ma so sinh vien"
+        android:textColor="?attr/colorControlActivated"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textViewLastCheckIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewStudentName"
+        android:layout_alignRight="@id/textViewStudentCode"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="serif"
+        android:text="Ngay cuoi ghi nhan"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="20sp"
+        android:layout_marginRight="10dp"/>
+
+    <ImageView
+        android:id="@+id/imgLate"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_late"
+        android:layout_toLeftOf="@+id/textViewNumLate"
+        android:layout_marginRight="15dp"/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/textViewNumLate"
+        android:layout_alignParentRight="true"
+        android:text="0"
+        android:textSize="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"/>
+
+
+    <ImageView
+        android:id="@+id/imgAttend"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_check"
+        android:layout_toLeftOf="@+id/textViewNumAttend"
+        android:layout_marginRight="15dp"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/textViewNumAttend"
+        android:text="0"
+        android:textSize="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_toLeftOf="@+id/imgLate"/>
+</RelativeLayout>
